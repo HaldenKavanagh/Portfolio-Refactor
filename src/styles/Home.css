@@ -1,0 +1,20 @@
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 93vh;
+  background: var(--darkest);
+}
+
+.homeText {
+  display: flex;
+  flex-direction: column;
+
+  background: var(--darkest);
+}
+
+.pfp {
+  margin: 5vh;
+  height: 30vh;
+}
+

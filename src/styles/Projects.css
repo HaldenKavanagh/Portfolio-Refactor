@@ -1,0 +1,79 @@
+.projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--darkest);
+}
+
+.container {
+  border-radius: 12px;
+  background: var(--dark);
+  border: 1px solid var(--light);
+  padding: 38px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  max-width: 70vw;
+}
+
+.wrapper {
+  background: var(--dark);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.banner-image {
+  background-position: center;
+  max-height: 20vh;
+  border-radius: 12px;
+}
+
+h1 {
+  color: var(--lightest);
+  font-size: 2.4rem;
+  background-color: var(--darkest);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 15px;
+}
+
+p {
+  color: var(--light);
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 150%;
+  letter-spacing: 2px;
+  background-color: var(--darkest);
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  margin-top: 10px;
+}
+
+.button-wrapper {
+  margin-top: 18px;
+}
+
+.btn {
+  border: 2px solid var(--darkest);
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn + .btn {
+  margin-left: 10px;
+}
+
+.fill {
+  background: var(--medium);
+  color: var(--darkest);
+  font-weight: bold;
+}
