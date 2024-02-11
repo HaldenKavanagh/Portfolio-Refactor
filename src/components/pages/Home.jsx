@@ -7,9 +7,9 @@ export default function Home() {
   return (
     <div className="homePage">
       <div className="homeText">
-        <h2>Hello,</h2>
-        <h1>My name is Halden Kavanagh</h1>
-        <h3>Full stack web dev</h3>
+        <h2 className="hello">Hello,</h2>
+        <h2 className="myNameIs">My name is <span className="halden">Halden Kavanagh</span> </h2>
+        <h3 className="webdev">Full stack web dev</h3>
       </div>
       <img
         className="pfp"

@@ -4,17 +4,36 @@
   align-items: center;
   height: 93vh;
   background: var(--darkest);
+  color: var(--medium);
+}
+
+.hello {
+  font-size: 7vh
+}
+
+.myNameIs {
+  color:var(--medium);
+  font-size: 5vh;
+  margin-top: 15px;
+}
+
+.halden {
+  color: var(--lightest);
+}
+
+.webdev {
+  font-size: 3vh;
+  margin-top: 10px;
 }
 
 .homeText {
   display: flex;
   flex-direction: column;
-
   background: var(--darkest);
+  
 }
 
 .pfp {
   margin: 5vh;
   height: 30vh;
 }
-
