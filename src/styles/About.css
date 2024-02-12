@@ -1,0 +1,30 @@
+.about {
+  height: 93vh;
+  background: var(--darkest);
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+}
+
+.about-section-title {
+  color: var(--light);
+  margin-top: 25px;
+}
+
+.about-p {
+  color: var(--lightest);
+  margin-top: 20px;
+  max-width: 85vw;
+}
+
+.skills-ul {
+  color: var(--light);
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+/* .skills-li {
+    ul {
+        list-style-type: none;
+      }
+} */

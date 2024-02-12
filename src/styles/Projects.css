@@ -31,7 +31,7 @@
   border-radius: 12px;
 }
 
-h1 {
+.project-title {
   color: var(--lightest);
   font-size: 2.4rem;
   background-color: var(--darkest);
@@ -41,7 +41,7 @@ h1 {
   margin-top: 15px;
 }
 
-p {
+.project-description {
   color: var(--light);
   text-align: center;
   font-size: 0.8rem;
@@ -76,4 +76,5 @@ p {
   background: var(--medium);
   color: var(--darkest);
   font-weight: bold;
+  text-decoration: none;
 }
