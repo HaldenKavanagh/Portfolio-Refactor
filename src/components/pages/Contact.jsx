@@ -1,6 +1,8 @@
+import "../../styles/Contact.css";
+
 export default function Contact() {
     return (
-      <div>
+      <div className="contact">
         <h1>contact</h1>
         <ul>
           <li>github</li>

@@ -1,0 +1,12 @@
+.footer {
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 5px solid var(--light);
+}
+
+.contact-img {
+  max-height: 5vh;
+  margin: 3vh
+}

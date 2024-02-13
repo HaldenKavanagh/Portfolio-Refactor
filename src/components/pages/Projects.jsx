@@ -15,8 +15,7 @@ export default function Projects() {
           <img className="banner-image" src={candleImg}></img>
           <h1 className="project-title"> Star Ray design V1</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Full stack E-commerce site designed for a local botique shop
           </p>
         </div>
         <div className="button-wrapper">
