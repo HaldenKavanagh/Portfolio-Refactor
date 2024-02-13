@@ -17,6 +17,7 @@ export default function Projects() {
           <p className="project-description">
             Full stack E-commerce site designed for a local botique shop
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -40,9 +41,10 @@ export default function Projects() {
           <img className="banner-image" src={textEditerImg}></img>
           <h1 className="project-title"> PWA text editor</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Progressive Web Application Text editor, can be downloaded
+            and used offline
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -66,9 +68,10 @@ export default function Projects() {
           <img className="banner-image" src={menYouImg}></img>
           <h1 className="project-title"> menYou</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Date night planner, 
+            utilizes multiple third party API's to plan your next date night
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -92,9 +95,9 @@ export default function Projects() {
           <img className="banner-image" src={weatherImg}></img>
           <h1 className="project-title"> Weather dashboard</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Dashboard to keep up with the weekly forecast in a location of your choice
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -118,9 +121,9 @@ export default function Projects() {
           <img className="banner-image" src={plannerImg}></img>
           <h1 className="project-title"> Workday Planner</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Manage your time wisely with this workday planner wich allows you to add and delete notes for each hour of the day.
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -144,9 +147,9 @@ export default function Projects() {
           <img className="banner-image" src={quizImg}></img>s
           <h1 className="project-title">Js Quiz</h1>
           <p className="project-description">
-            Lorem ipsum dolor sit amet, <br />
-            consectetur adipiscing elit.
+            Simple Javascript quiz. Be carefull, each incorrect question will reduce the game time! 
           </p>
+          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
