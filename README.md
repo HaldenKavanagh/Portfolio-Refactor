@@ -22,6 +22,8 @@ Use the buttons in the navbar to navigate the site. To contact me, fill out and 
 
 ## link to deployed
 
+https://65ccf801b0b0eb049e4fabe3--soft-croissant-b1b9e1.netlify.app/Projects
+
 ## Questions
 
 Visit my GitHub profile: [HaldenKavanagh](https://github.com/HaldenKavanagh/)
