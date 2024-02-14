@@ -1,4 +1,4 @@
-import "../styles/footer.css";
+import "../styles/Footer.css";
 import gitHubLogo from "../images/gitHubLogo.png";
 import indeedLogo from "../images/indeedLogo.png";
 import linkedInLogo from "../images/linkedInLogo.png";
