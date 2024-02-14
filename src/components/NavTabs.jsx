@@ -1,43 +1,67 @@
+import { Link, useLocation } from "react-router-dom";
 import "../styles/NavTabs.css";
 
-function NavTabs({ currentPage, handlePageChange }) {
+function NavTabs() {
+  const location = useLocation();
+
+  const getPageName = (pathname) => {
+    // Extract the last part of the pathname as the page name
+    const pageName = pathname.substring(1);
+    return pageName === "" ? "Home" : pageName;
+  };
+
   return (
     <div className="navbar">
-      <a
-        href="#home"
-        onClick={() => handlePageChange("Home")}
-        className={currentPage === "Home" ? "nav-link active" : "nav-link"}
+      <Link
+        to="/Home"
+        className={
+          getPageName(location.pathname) === "Home"
+            ? "nav-link active"
+            : "nav-link"
+        }
       >
         Home
-      </a>
-      <a
-        href="#about"
-        onClick={() => handlePageChange("About")}
-        className={currentPage === "About" ? "nav-link active" : "nav-link"}
+      </Link>
+      <Link
+        to="/About"
+        className={
+          getPageName(location.pathname) === "About"
+            ? "nav-link active"
+            : "nav-link"
+        }
       >
         About
-      </a>
-      <a
-        href="#projects"
-        onClick={() => handlePageChange("Projects")}
-        className={currentPage === "Projects" ? "nav-link active" : "nav-link"}
+      </Link>
+      <Link
+        to="/Projects"
+        className={
+          getPageName(location.pathname) === "Projects"
+            ? "nav-link active"
+            : "nav-link"
+        }
       >
         Projects
-      </a>
-      <a
-        href="#resume"
-        onClick={() => handlePageChange("Resume")}
-        className={currentPage === "Resume" ? "nav-link active" : "nav-link"}
+      </Link>
+      <Link
+        to="/Resume"
+        className={
+          getPageName(location.pathname) === "Resume"
+            ? "nav-link active"
+            : "nav-link"
+        }
       >
         Resume
-      </a>
-      <a
-        href="#contact"
-        onClick={() => handlePageChange("Contact")}
-        className={currentPage === "Contact" ? "nav-link active" : "nav-link"}
+      </Link>
+      <Link
+        to="/Contact"
+        className={
+          getPageName(location.pathname) === "Contact"
+            ? "nav-link active"
+            : "nav-link"
+        }
       >
         Contact
-      </a>
+      </Link>
     </div>
   );
 }

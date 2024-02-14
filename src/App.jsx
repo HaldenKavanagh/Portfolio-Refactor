@@ -1,5 +1,18 @@
-import PortfolioContainer from "./components/PortfolioContainer";
+import React from "react";
+import { Outlet } from "react-router-dom";
+import NavTabs from "./components/NavTabs";
+import Footer from "./components/Footer";
 
-const App = () => <PortfolioContainer />;
+
+
+function App() {
+  return (
+    <main>
+      <NavTabs />
+      <Outlet />
+      <Footer />
+    </main>
+  );
+}
 
 export default App;
