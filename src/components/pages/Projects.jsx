@@ -1,7 +1,7 @@
 import "../../styles/Projects.css";
 
 import candleImg from "../../images/candles.png";
-import textEditerImg from "../../images/textEditer.png";
+import textEditerImg from "../../images/TextEditer.png";
 import menYouImg from "../../images/menYou.png";
 import weatherImg from "../../images/weather.png";
 import plannerImg from "../../images/planner.png";
@@ -41,8 +41,8 @@ export default function Projects() {
           <img className="banner-image" src={textEditerImg}></img>
           <h1 className="project-title"> PWA text editor</h1>
           <p className="project-description">
-            Progressive Web Application Text editor, can be downloaded
-            and used offline
+            Progressive Web Application Text editor, can be downloaded and used
+            offline
           </p>
           <p className="project-description">Tech Used:</p>
         </div>
@@ -68,8 +68,8 @@ export default function Projects() {
           <img className="banner-image" src={menYouImg}></img>
           <h1 className="project-title"> menYou</h1>
           <p className="project-description">
-            Date night planner, 
-            utilizes multiple third party API's to plan your next date night
+            Date night planner, utilizes multiple third party API's to plan your
+            next date night
           </p>
           <p className="project-description">Tech Used:</p>
         </div>
@@ -95,7 +95,8 @@ export default function Projects() {
           <img className="banner-image" src={weatherImg}></img>
           <h1 className="project-title"> Weather dashboard</h1>
           <p className="project-description">
-            Dashboard to keep up with the weekly forecast in a location of your choice
+            Dashboard to keep up with the weekly forecast in a location of your
+            choice
           </p>
           <p className="project-description">Tech Used:</p>
         </div>
@@ -121,7 +122,8 @@ export default function Projects() {
           <img className="banner-image" src={plannerImg}></img>
           <h1 className="project-title"> Workday Planner</h1>
           <p className="project-description">
-            Manage your time wisely with this workday planner wich allows you to add and delete notes for each hour of the day.
+            Manage your time wisely with this workday planner wich allows you to
+            add and delete notes for each hour of the day.
           </p>
           <p className="project-description">Tech Used:</p>
         </div>
@@ -147,7 +149,8 @@ export default function Projects() {
           <img className="banner-image" src={quizImg}></img>s
           <h1 className="project-title">Js Quiz</h1>
           <p className="project-description">
-            Simple Javascript quiz. Be carefull, each incorrect question will reduce the game time! 
+            Simple Javascript quiz. Be carefull, each incorrect question will
+            reduce the game time!
           </p>
           <p className="project-description">Tech Used:</p>
         </div>
