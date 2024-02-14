@@ -45,6 +45,7 @@ export default function About() {
           <li classname="skills-li">Mongoose</li>
         </ul>
       </div>
+      
     </div>
   );
 }

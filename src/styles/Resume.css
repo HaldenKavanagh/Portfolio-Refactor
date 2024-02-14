@@ -2,3 +2,15 @@
   background-color: var(--darkest);
   height: 86vh;
 }
+
+.resume-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 40vh
+}
+
+.resume-a {
+  color: var(--lightest);
+  text-decoration: none;
+  font-size: 30px;
+}
