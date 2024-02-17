@@ -1,5 +1,19 @@
 import "../../styles/About.css";
 
+import {
+  DiReact,
+  DiBootstrap,
+  DiCss3,
+  DiGit,
+  DiHeroku,
+  DiHtml5,
+  DiJsBadge,
+  DiMongodb,
+  DiMysql,
+  DiNpm,
+  DiNodejsSmall,
+} from "react-icons/di";
+
 export default function About() {
   return (
     <div className="about">
@@ -15,37 +29,28 @@ export default function About() {
 
       <h1 className="skills-section-title">SKILLSET</h1>
       <div className="skills-container">
-        
-        <ul className="skills-ul">
-          <h1 className="skill-list-title">Front End Skills</h1>
-          <li classname="skills-li">HTML</li>
-          <li classname="skills-li">Git</li>
-          <li classname="skills-li">CSS</li>
-          <li classname="skills-li">JavaScript</li>
-          <li classname="skills-li">Node</li>
-          <li classname="skills-li">Express</li>
-          <li classname="skills-li">sql</li>
-          <li classname="skills-li">PWA</li>
-          <li classname="skills-li">React</li>
-          <li classname="skills-li">MongoDb</li>
-          <li classname="skills-li">Mongoose</li>
-        </ul>
-        <ul className="skills-ul">
-        <h1 className="skill-list-title">Back End Skills</h1>
-          <li classname="skills-li">HTML</li>
-          <li classname="skills-li">Git</li>
-          <li classname="skills-li">CSS</li>
-          <li classname="skills-li">JavaScript</li>
-          <li classname="skills-li">Node</li>
-          <li classname="skills-li">Express</li>
-          <li classname="skills-li">sql</li>
-          <li classname="skills-li">PWA</li>
-          <li classname="skills-li">React</li>
-          <li classname="skills-li">MongoDb</li>
-          <li classname="skills-li">Mongoose</li>
-        </ul>
+        <DiNodejsSmall className="skill" />
+
+        <DiNpm className="skill" />
+
+        <DiMysql className="skill" />
+
+        <DiMongodb className="skill" />
+
+        <DiJsBadge className="skill" />
+
+        <DiHtml5 className="skill" />
+
+        <DiHeroku className="skill" />
+
+        <DiBootstrap className="skill" />
+
+        <DiReact className="skill" />
+
+        <DiCss3 className="skill" />
+
+        <DiGit className="skill" />
       </div>
-      
     </div>
   );
 }
