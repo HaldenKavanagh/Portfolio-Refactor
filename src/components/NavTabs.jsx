@@ -1,5 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import "../styles/NavTabs.css";
+import {
+  AiOutlineRocket,
+  AiOutlineAudit,
+  AiOutlineHome,
+  AiOutlineFundProjectionScreen,
+  AiOutlineUser,
+} from "react-icons/ai";
 
 function NavTabs() {
   const location = useLocation();
@@ -20,7 +27,7 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        Home
+        <AiOutlineHome /> Home
       </Link>
       <Link
         to="/About"
@@ -30,7 +37,7 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        About
+        <AiOutlineUser /> About
       </Link>
       <Link
         to="/Projects"
@@ -40,7 +47,7 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        Projects
+        <AiOutlineFundProjectionScreen /> Projects
       </Link>
       <Link
         to="/Resume"
@@ -50,7 +57,7 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        Resume
+        <AiOutlineAudit /> Resume
       </Link>
       <Link
         to="/Contact"
@@ -60,6 +67,7 @@ function NavTabs() {
             : "nav-link"
         }
       >
+        <AiOutlineRocket />
         Contact
       </Link>
     </div>
