@@ -14,7 +14,7 @@ import {
   DiJqueryLogo,
 } from "react-icons/di";
 import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
-import { FaAws, FaWindows, FaSlack } from "react-icons/fa";
+import { FaAws, FaWindows, FaSlack, FaGithub } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 
 export default function About() {
@@ -24,11 +24,16 @@ export default function About() {
       <p className="about-p">
         Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
         <br />
+        <br />
         My coding journey started at the University of Denver coding bootcamp,
-        igniting a passion for web development. I found that I really enjoy the problem solving aspect in programming, and seeing my work inprove along with my skillset is extremely gratifying.
-        <br /> Outside of coding, you'll find me exploring Boulder's outdoors
-        through hikes, enjoying video games, and building intricate fishtanks.
-        My diverse interests fuel my creativity both in code and in life. Let's
+        igniting a passion for web development. I found that I really enjoy the
+        problem solving aspect in programming, and seeing my work improve
+        alongside my skillset is extremely gratifying.
+        <br />
+        <br />
+        Outside of coding, you'll find me exploring Boulder's outdoors through
+        hikes, enjoying video games, and building intricate fishtanks. My
+        diverse interests fuel my creativity both in code and in life. Let's
         create something exceptional together!
       </p>
 
@@ -50,11 +55,12 @@ export default function About() {
         <FaAws className="skill" />
       </div>
       <h1 className="skills-section-title">TOOLS I USE</h1>
-      <div className="skills-container">
+      <div className="tools-container">
         <FaWindows className="skill" />
         <DiGit className="skill" />
         <TbBrandVscode className="skill" />
         <FaSlack className="skill" />
+        <FaGithub className="skill" />
       </div>
     </div>
   );

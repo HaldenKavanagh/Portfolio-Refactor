@@ -37,10 +37,11 @@ export default function Contact() {
 
   return (
     <div className="contact">
+
       <h1 className="contact-title">Contact Me</h1>
       <form onSubmit={handleSubmit} className="contactForm">
-        <div >
           <label htmlFor="name">Name:</label>
+        <div >
           <input
             type="text"
             id="name"
@@ -51,8 +52,8 @@ export default function Contact() {
             required
           />
         </div>
-        <div >
           <label htmlFor="email">Email:</label>
+        <div >
           <input
             type="email"
             id="email"
@@ -64,8 +65,8 @@ export default function Contact() {
           />
           {emailError && <p style={{ color: "red" }}>{emailError}</p>}
         </div>
-        <div className="message-div">
           <label htmlFor="message">Message:</label>
+        <div className="message-div">
           <textarea
             id="message"
             name="message"
