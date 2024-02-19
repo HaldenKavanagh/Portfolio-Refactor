@@ -8,6 +8,8 @@
 
 .contact-title {
   color: var(--lightest);
+  padding: 25px;
+  
 }
 
 .contactForm {
@@ -21,6 +23,7 @@
   border-radius: 10px;
   height: 70vh;
   width: 40vw;
+  margin-bottom: 35px;
 }
 
 .custom-input {
