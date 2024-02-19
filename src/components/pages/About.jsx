@@ -10,46 +10,51 @@ import {
   DiJsBadge,
   DiMongodb,
   DiMysql,
-  DiNpm,
   DiNodejsSmall,
+  DiJqueryLogo,
 } from "react-icons/di";
+import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
+import { FaAws, FaWindows, FaSlack } from "react-icons/fa";
+import { TbBrandVscode } from "react-icons/tb";
 
 export default function About() {
   return (
     <div className="about">
       <h1 className="about-section-title">ABOUT ME</h1>
       <p className="about-p">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus
-        quaerat nobis facilis illum adipisci facere voluptatem laboriosam
-        possimus veritatis fugiat. Iure qui blanditiis debitis, provident
-        molestias neque harum tenetur nisi ab excepturi at quisquam veniam
-        libero, dicta obcaecati adipisci! Accusamus enim reprehenderit tempore
-        eveniet nihil magnam, facilis rem illum voluptatem.
+        Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
+        <br />
+        My coding journey started at the University of Denver coding bootcamp,
+        igniting a passion for web development. I found that I really enjoy the problem solving aspect in programming, and seeing my work inprove along with my skillset is extremely gratifying.
+        <br /> Outside of coding, you'll find me exploring Boulder's outdoors
+        through hikes, enjoying video games, and building intricate fishtanks.
+        My diverse interests fuel my creativity both in code and in life. Let's
+        create something exceptional together!
       </p>
 
       <h1 className="skills-section-title">SKILLSET</h1>
       <div className="skills-container">
         <DiNodejsSmall className="skill" />
-
-        <DiNpm className="skill" />
-
+        <DiJqueryLogo className="skill" />
         <DiMysql className="skill" />
-
         <DiMongodb className="skill" />
-
         <DiJsBadge className="skill" />
-
         <DiHtml5 className="skill" />
-
         <DiHeroku className="skill" />
-
         <DiBootstrap className="skill" />
-
         <DiReact className="skill" />
-
         <DiCss3 className="skill" />
-
+        <SiExpress className="skill" />
+        <SiHandlebarsdotjs className="skill" />
+        <SiWebpack className="skill" />
+        <FaAws className="skill" />
+      </div>
+      <h1 className="skills-section-title">TOOLS I USE</h1>
+      <div className="skills-container">
+        <FaWindows className="skill" />
         <DiGit className="skill" />
+        <TbBrandVscode className="skill" />
+        <FaSlack className="skill" />
       </div>
     </div>
   );

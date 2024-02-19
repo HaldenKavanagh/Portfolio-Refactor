@@ -26,11 +26,16 @@
 
 .skills-container {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .skill {
   color: var(--lightest);
-  margin: 10px;
-  height: 50px;
-  width: 50px;
+  margin: 20px;
+  padding: 20px;
+  height: 7vh;
+  width: 7vw;
+  border: 5px solid var(--light);
+  border-radius: 10px;
+  background-color: var(--dark);
 }
