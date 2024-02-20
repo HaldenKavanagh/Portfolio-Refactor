@@ -12,6 +12,11 @@
   background: var(--dark);
   text-decoration: none;
   font-size: 4vh;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--light);
 }
 
 .nav-link.active {

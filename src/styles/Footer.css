@@ -12,3 +12,7 @@
   height: 50px;
   width: 50px;
 }
+
+.contact-img:hover {
+  color: var(--medium);
+}

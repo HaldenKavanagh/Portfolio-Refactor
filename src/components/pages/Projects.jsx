@@ -6,10 +6,64 @@ import menYouImg from "../../images/menYou.png";
 import weatherImg from "../../images/weather.png";
 import plannerImg from "../../images/planner.png";
 import quizImg from "../../images/quiz.png";
+import starrray from "../../images/starrray.png";
 
 export default function Projects() {
   return (
     <div className="projects">
+      <div className="container">
+        <div className="wrapper">
+          <img className="banner-image" src={starrray}></img>
+          <h1 className="project-title">Star Ray design V2</h1>
+          <p className="project-description">
+            Full stack E-commerce site designed for a local botique shop
+          </p>
+          <p className="project-description">Tech Used:</p>
+        </div>
+        <div className="button-wrapper">
+          <a
+            href="https://github.com/laurabacon/Star-Ray"
+            target="_blank"
+            className="btn fill"
+          >
+            View Github Repo
+          </a>
+          <a
+            href="https://lit-eyrie-12834-5b6e0706190e.herokuapp.com/"
+            target="_blank"
+            className="btn fill"
+          >
+            Visit site
+          </a>
+        </div>
+      </div>
+      <div className="container">
+        <div className="wrapper">
+          <img className="banner-image" src={menYouImg}></img>
+          <h1 className="project-title"> menYou</h1>
+          <p className="project-description">
+            Date night planner, utilizes multiple third party API's to plan your
+            next date night
+          </p>
+          <p className="project-description">Tech Used:</p>
+        </div>
+        <div className="button-wrapper">
+          <a
+            href="https://github.com/scook9/menYou"
+            target="_blank"
+            className="btn fill"
+          >
+            View Github Repo
+          </a>
+          <a
+            href="https://scook9.github.io/menYou/"
+            target="_blank"
+            className="btn fill"
+          >
+            Visit site
+          </a>
+        </div>
+      </div>
       <div className="container">
         <div className="wrapper">
           <img className="banner-image" src={candleImg}></img>
@@ -56,33 +110,6 @@ export default function Projects() {
           </a>
           <a
             href="https://jate-pwa-text-editor-kavanagh-9dd90f6a05dd.herokuapp.com/"
-            target="_blank"
-            className="btn fill"
-          >
-            Visit site
-          </a>
-        </div>
-      </div>
-      <div className="container">
-        <div className="wrapper">
-          <img className="banner-image" src={menYouImg}></img>
-          <h1 className="project-title"> menYou</h1>
-          <p className="project-description">
-            Date night planner, utilizes multiple third party API's to plan your
-            next date night
-          </p>
-          <p className="project-description">Tech Used:</p>
-        </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/scook9/menYou"
-            target="_blank"
-            className="btn fill"
-          >
-            View Github Repo
-          </a>
-          <a
-            href="https://scook9.github.io/menYou/"
             target="_blank"
             className="btn fill"
           >
@@ -146,7 +173,7 @@ export default function Projects() {
       </div>
       <div className="container">
         <div className="wrapper">
-          <img className="banner-image" src={quizImg}></img>s
+          <img className="banner-image" src={quizImg}></img>
           <h1 className="project-title">Js Quiz</h1>
           <p className="project-description">
             Simple Javascript quiz. Be carefull, each incorrect question will
