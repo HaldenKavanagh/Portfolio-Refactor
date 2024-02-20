@@ -176,7 +176,7 @@ export default function Projects() {
           <img className="banner-image" src={quizImg}></img>
           <h1 className="project-title">Js Quiz</h1>
           <p className="project-description">
-            Simple Javascript quiz. Be carefull, each incorrect question will
+            Simple Javascript quiz. Be carefull, each incorrect answer will
             reduce the game time!
           </p>
           <p className="project-description">Tech Used:</p>
