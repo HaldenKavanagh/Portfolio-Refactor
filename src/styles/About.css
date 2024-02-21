@@ -8,13 +8,13 @@
 .about-section-title {
   color: var(--light);
   margin-top: 25px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .skills-section-title {
   color: var(--light);
   margin-top: 25px;
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .about-p {

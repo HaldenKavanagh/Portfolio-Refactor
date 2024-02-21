@@ -20,7 +20,7 @@ import { TbBrandVscode } from "react-icons/tb";
 export default function About() {
   return (
     <div className="about">
-      <h1 className="about-section-title">ABOUT ME</h1>
+      <h1 className="about-section-title">ABOUT ME :</h1>
       <p className="about-p">
         Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
         <br />
@@ -37,7 +37,7 @@ export default function About() {
         create something exceptional together!
       </p>
 
-      <h1 className="skills-section-title">SKILLSET</h1>
+      <h1 className="skills-section-title">SKILLSET :</h1>
       <div className="skills-container">
         <DiNodejsSmall className="skill" />
         <DiJqueryLogo className="skill" />
@@ -54,7 +54,7 @@ export default function About() {
         <SiWebpack className="skill" />
         <FaAws className="skill" />
       </div>
-      <h1 className="skills-section-title">TOOLS I USE</h1>
+      <h1 className="skills-section-title">TOOLS I USE :</h1>
       <div className="tools-container">
         <FaWindows className="skill" />
         <DiGit className="skill" />
