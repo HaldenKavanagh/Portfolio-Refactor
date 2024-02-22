@@ -20,7 +20,7 @@ function NavTabs() {
   return (
     <div className="navbar">
       <Link
-        to="/Home"
+        to="/home"
         className={
           getPageName(location.pathname) === "Home"
             ? "nav-link active"
@@ -30,7 +30,7 @@ function NavTabs() {
         <AiOutlineHome /> Home
       </Link>
       <Link
-        to="/About"
+        to="/about"
         className={
           getPageName(location.pathname) === "About"
             ? "nav-link active"
@@ -40,7 +40,7 @@ function NavTabs() {
         <AiOutlineUser /> About
       </Link>
       <Link
-        to="/Projects"
+        to="/projects"
         className={
           getPageName(location.pathname) === "Projects"
             ? "nav-link active"
@@ -50,7 +50,7 @@ function NavTabs() {
         <AiOutlineFundProjectionScreen /> Projects
       </Link>
       <Link
-        to="/Resume"
+        to="/resume"
         className={
           getPageName(location.pathname) === "Resume"
             ? "nav-link active"
@@ -60,7 +60,7 @@ function NavTabs() {
         <AiOutlineAudit /> Resume
       </Link>
       <Link
-        to="/Contact"
+        to="/contact"
         className={
           getPageName(location.pathname) === "Contact"
             ? "nav-link active"
