@@ -27,12 +27,12 @@ export default function About() {
         <br />
         My coding journey started at the University of Denver coding bootcamp,
         igniting a passion for web development. I found that I really enjoy the
-        problem solving aspect in programming, and seeing my work improve
+        problem solving aspect of programming. Seeing my work improve
         alongside my skillset is extremely gratifying.
         <br />
         <br />
         Outside of coding, you'll find me exploring Boulder's outdoors through
-        hikes, enjoying video games, and building intricate fishtanks. My
+        hikes, enjoying video games, cooking, and building intricate fishtanks. My
         diverse interests fuel my creativity both in code and in life. Let's
         create something exceptional together!
       </p>

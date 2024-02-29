@@ -16,9 +16,9 @@ export default function Projects() {
           <img className="banner-image" src={starrray}></img>
           <h1 className="project-title">Star Ray design V2</h1>
           <p className="project-description">
-            Full stack E-commerce site designed for a local botique shop
+            Full stack E-commerce site designed for a local botique shop. Uses
+            full MERN tech stack.
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -43,9 +43,8 @@ export default function Projects() {
           <h1 className="project-title"> menYou</h1>
           <p className="project-description">
             Date night planner, utilizes multiple third party API's to plan your
-            next date night
+            next date night!
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -69,9 +68,9 @@ export default function Projects() {
           <img className="banner-image" src={candleImg}></img>
           <h1 className="project-title"> Star Ray design V1</h1>
           <p className="project-description">
-            Full stack E-commerce site designed for a local botique shop
+            Full stack E-commerce site designed for a local botique shop.
+            Utilizes a SQL database with handlebars.
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -96,9 +95,8 @@ export default function Projects() {
           <h1 className="project-title"> PWA text editor</h1>
           <p className="project-description">
             Progressive Web Application Text editor, can be downloaded and used
-            offline
+            offline. Built with Webpack.
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -123,9 +121,8 @@ export default function Projects() {
           <h1 className="project-title"> Weather dashboard</h1>
           <p className="project-description">
             Dashboard to keep up with the weekly forecast in a location of your
-            choice
+            choice.
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -152,7 +149,6 @@ export default function Projects() {
             Manage your time wisely with this workday planner wich allows you to
             add and delete notes for each hour of the day.
           </p>
-          <p className="project-description">Tech Used:</p>
         </div>
         <div className="button-wrapper">
           <a
@@ -164,33 +160,6 @@ export default function Projects() {
           </a>
           <a
             href="https://haldenkavanagh.github.io/Workday-Planner/"
-            target="_blank"
-            className="btn fill"
-          >
-            Visit site
-          </a>
-        </div>
-      </div>
-      <div className="container">
-        <div className="wrapper">
-          <img className="banner-image" src={quizImg}></img>
-          <h1 className="project-title">Js Quiz</h1>
-          <p className="project-description">
-            Simple Javascript quiz. Be carefull, each incorrect answer will
-            reduce the game time!
-          </p>
-          <p className="project-description">Tech Used:</p>
-        </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/HaldenKavanagh/Js-Quiz"
-            target="_blank"
-            className="btn fill"
-          >
-            View Github Repo
-          </a>
-          <a
-            href="https://haldenkavanagh.github.io/Js-Quiz/"
             target="_blank"
             className="btn fill"
           >
