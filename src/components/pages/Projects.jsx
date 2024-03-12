@@ -4,8 +4,7 @@ import candleImg from "../../images/candles.png";
 import textEditerImg from "../../images/TextEditer.png";
 import menYouImg from "../../images/menYou.png";
 import weatherImg from "../../images/weather.png";
-import plannerImg from "../../images/planner.png";
-import quizImg from "../../images/quiz.png";
+import tankBlog from "../../images/tank-blog.png";
 import starrray from "../../images/starrray.png";
 
 export default function Projects() {
@@ -30,6 +29,32 @@ export default function Projects() {
           </a>
           <a
             href="https://lit-eyrie-12834-5b6e0706190e.herokuapp.com/"
+            target="_blank"
+            className="btn fill"
+          >
+            Visit site
+          </a>
+        </div>
+      </div>
+      <div className="container">
+        <div className="wrapper">
+          <img className="banner-image" src={tankBlog}></img>
+          <h1 className="project-title"> The Tank Blog</h1>
+          <p className="project-description">
+            full stack MERN style blog site, allows users to login, create
+            posts, comment, and more.
+          </p>
+        </div>
+        <div className="button-wrapper">
+          <a
+            href="https://github.com/HaldenKavanagh/Workday-Planner"
+            target="_blank"
+            className="btn fill"
+          >
+            View Github Repo
+          </a>
+          <a
+            href="https://haldenkavanagh.github.io/Workday-Planner/"
             target="_blank"
             className="btn fill"
           >
@@ -134,32 +159,6 @@ export default function Projects() {
           </a>
           <a
             href="https://scook9.github.io/module-6-weather-dashboard/"
-            target="_blank"
-            className="btn fill"
-          >
-            Visit site
-          </a>
-        </div>
-      </div>
-      <div className="container">
-        <div className="wrapper">
-          <img className="banner-image" src={plannerImg}></img>
-          <h1 className="project-title"> Workday Planner</h1>
-          <p className="project-description">
-            Manage your time wisely with this workday planner wich allows you to
-            add and delete notes for each hour of the day.
-          </p>
-        </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/HaldenKavanagh/Workday-Planner"
-            target="_blank"
-            className="btn fill"
-          >
-            View Github Repo
-          </a>
-          <a
-            href="https://haldenkavanagh.github.io/Workday-Planner/"
             target="_blank"
             className="btn fill"
           >

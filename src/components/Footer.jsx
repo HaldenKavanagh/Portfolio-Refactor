@@ -9,11 +9,10 @@ function Footer({ currentPage, handlePageChange }) {
       <a href="https://github.com/HaldenKavanagh" target="_blank">
         <FaGithub className="contact-img" />
       </a>
-
-      <a href="#" target="_blank">
-        <SiIndeed className="contact-img" />
-      </a>
-      <a href="https://www.linkedin.com/in/halden-kavanagh-79169b2b6/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/halden-kavanagh-79169b2b6/"
+        target="_blank"
+      >
         <FaLinkedin className="contact-img" />
       </a>
     </div>
