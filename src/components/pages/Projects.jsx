@@ -47,14 +47,14 @@ export default function Projects() {
         </div>
         <div className="button-wrapper">
           <a
-            href="https://github.com/HaldenKavanagh/Workday-Planner"
+            href="https://github.com/HaldenKavanagh/Tank-Blog"
             target="_blank"
             className="btn fill"
           >
             View Github Repo
           </a>
           <a
-            href="https://haldenkavanagh.github.io/Workday-Planner/"
+            href="https://calm-eyrie-88400-aa49694dc0d1.herokuapp.com/"
             target="_blank"
             className="btn fill"
           >
