@@ -1,10 +1,26 @@
-:root {
+ /* :root {
   --lightest: #f2e9e4;
   --light: #c9ada7;
   --medium: #9a8c98;
   --dark: #4a4e69;
   --darkest: #22223b;
-}
+} */
+
+ :root {
+  --lightest: #BFBFB8;
+  --light: #A4A69C;
+  --medium: #4C594F;
+  --dark: #35403A;
+  --darkest: #232625;
+} 
+
+/* :root {
+  --lightest: #d3d3d3;
+  --light: #e5383b;
+  --medium: #b1a7a6;
+  --dark: #660708;
+  --darkest: #161a1d;
+}  */
 
 * {
   font-family: "Rajdhani", sans-serif;
