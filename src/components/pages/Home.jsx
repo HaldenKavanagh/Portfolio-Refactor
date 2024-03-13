@@ -4,7 +4,7 @@ import "../../styles/Main.css";
 import React, { useEffect } from "react";
 import Granim from "granim";
 
-import profilePicture from "../../images/candles.png";
+import pfp from "../../images/pfp.png";
 
 export default function Home() {
   // useEffect(() => {
@@ -41,12 +41,7 @@ export default function Home() {
         </h2>
         <h3 className="webdev">Full stack web dev</h3>
       </div>
-      <img
-        className="pfp"
-        src="https://static.vecteezy.com/system/resources/thumbnails/004/511/281/small/default-avatar-photo-placeholder-profile-picture-vector.jpg"
-        alt="profile Picture"
-      />
-      {/* <canvas id="canvas-complex"></canvas> */}
+      <img className="pfp" src={pfp} alt="profile Picture" />
     </div>
   );
 }
