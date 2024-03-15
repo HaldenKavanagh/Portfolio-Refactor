@@ -7,7 +7,7 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
-import Cert from "./components/pages/Cert";
+import Cert from "./components/pages/cert";
 
 const router = createBrowserRouter([
   {
