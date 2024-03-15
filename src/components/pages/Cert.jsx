@@ -5,12 +5,12 @@ import DUcert from "../../images/du-cert.png";
 
 export default function Cert() {
   const handleBack = () => {
-    // Handle certificate click logic here
+
     window.location.href = "/about";
   };
 
   return (
-    <div className="homePage">
+    <div className="cert">
       <button className="submit-btn" onClick={handleBack}>
         Back
       </button>
