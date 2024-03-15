@@ -18,7 +18,7 @@ import { FaAws, FaWindows, FaSlack, FaGithub, FaDiscord } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
 
-import DUbadge from "../../images/DUbadge.png";
+import DUbadge from "../../images/du-badge.png";
 
 export default function About() {
   const handleCertificateClick = () => {
