@@ -1,16 +1,3 @@
-.about {
-  background: var(--darkest);
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-}
-
-.about-section-title {
-  color: var(--light);
-  margin-top: 25px;
-  /* text-decoration: underline; */
-}
-
 .skills-section-title {
   color: var(--light);
   margin-top: 25px;
@@ -55,4 +42,19 @@
   background-color: var(--medium);
   color: var(--darkest);
   border: 5px solid var(--lightest);
+}
+
+.education {
+  max-width: 95vw;
+  padding: 35px;
+  margin-bottom: 30px;
+}
+
+.about-image {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.badge-section {
+  display: flex;
 }

@@ -16,30 +16,28 @@ import {
 import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
 import { FaAws, FaWindows, FaSlack, FaGithub, FaDiscord } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
+import { IoIosArrowDown } from "react-icons/io";
+
+import DUbadge from "../../images/DUbadge.png";
 
 export default function About() {
+  const handleCertificateClick = () => {
+    // Handle certificate click logic here
+    window.location.href = "/cert";
+  };
+
+  const handleBadgeClick = () => {
+    // Handle badge click logic here
+    window.open(
+      "https://www.credly.com/badges/3d2f16be-a807-4992-be69-bae0bd6aa68c/public_url",
+      "_blank"
+    );
+  };
   return (
     <div className="about">
-      <h1 className="about-section-title">ABOUT ME :</h1>
-      <p className="about-p">
-        Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
-        <br />
-        <br />
-        My coding journey started at the University of Denver coding bootcamp,
-        igniting a passion for web development. I found that I really enjoy the
-        problem solving aspect of programming. Seeing my work improve alongside
-        my skillset is extremely gratifying.
-        <br />
-        <br />
-        Outside of coding, you'll find me exploring Boulder's outdoors through
-        hikes, enjoying video games, cooking, and building intricate fishtanks.
-        My diverse interests fuel my creativity both in code and in life. Let's
-        create something exceptional together!
-      </p>
-
       <h1 className="skills-section-title">SKILLSET :</h1>
       <div className="skills-container">
-        <DiNodejsSmall className="skill" title="Node.js"/>
+        <DiNodejsSmall className="skill" title="Node.js" />
         <DiJqueryLogo className="skill" title="Jquery" />
         <DiMysql className="skill" title="Mysql" />
         <DiMongodb className="skill" title="Mongodb" />
@@ -54,14 +52,41 @@ export default function About() {
         <SiWebpack className="skill" title="Webpack" />
         <FaAws className="skill" title="Amazon Web Services" />
       </div>
-      <h1 className="skills-section-title" >TOOLS I USE :</h1>
-      <div className="tools-container" >
+      <h1 className="skills-section-title">TOOLS I USE :</h1>
+      <div className="tools-container">
         <FaWindows className="skill" title="Windows OS" />
-        <DiGit className="skill"  title="Git"/>
+        <DiGit className="skill" title="Git" />
         <TbBrandVscode className="skill" title="VsCode" />
         <FaSlack className="skill" title="Slack" />
-        <FaGithub className="skill"  title="Github"/>
-        <FaDiscord className="skill"  title="Discord"/>
+        <FaGithub className="skill" title="Github" />
+        <FaDiscord className="skill" title="Discord" />
+      </div>
+      <h1 className="skills-section-title">
+        EDUCATION <IoIosArrowDown />{" "}
+      </h1>
+      <div className="education">
+        <div className="badge-section">
+          <img className="about-image" src={DUbadge}></img>
+          <p className="about-p">
+            I graduated from the DU fullstack coding bootcamp on February 15,
+            2024.
+            <br />
+            <br />
+            An intensive three-month Full Stack Coding Bootcamp at DU, where I
+            acquired a comprehensive skill set in web development. Through
+            collaborative projects, I gained proficiency in GitHub workflow and
+            Agile methodologies, enhancing my ability to contribute effectively
+            to team projects.
+            <br />
+            <br />
+            <button onClick={handleCertificateClick} className="submit-btn">
+              View my certificate
+            </button>
+            <button onClick={handleBadgeClick} className="submit-btn">
+              View Credily Badge
+            </button>
+          </p>
+        </div>
       </div>
     </div>
   );

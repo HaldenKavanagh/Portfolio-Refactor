@@ -2,46 +2,43 @@ import "../../styles/Home.css";
 import "../../styles/Main.css";
 
 import React, { useEffect } from "react";
-import Granim from "granim";
+import { IoIosArrowDown } from "react-icons/io";
 
 import pfp from "../../images/pfp.png";
 
 export default function Home() {
-  // useEffect(() => {
-  //   const granimInstance = new Granim({
-  //     element: "#canvas-complex",
-  //     direction: "left-right",
-  //     isPausedWhenNotInView: true,
-  //     states: {
-  //       "default-state": {
-  //         gradients: [
-  //           [
-  //             { color: "#f2e9e4", pos: 0.2 },
-  //             { color: "#c9ada7", pos: 0.8 },
-  //             { color: "#9a8c98", pos: 1 },
-  //           ],
-  //           [
-  //             { color: "#4a4e69", pos: 0 },
-  //             { color: "#22223b", pos: 0.2 },
-  //             { color: "#22223b", pos: 0.75 },
-  //           ],
-  //           // Your gradient configurations here
-  //         ],
-  //       },
-  //     },
-  //   });
-  // }, []);
-
   return (
     <div className="homePage">
-      <div className="homeText">
-        <h2 className="hello">Hello,</h2>
-        <h2 className="myNameIs">
-          My name is <span className="halden">Halden Kavanagh</span>{" "}
-        </h2>
-        <h3 className="webdev">Full stack web dev</h3>
+      <div className="intro">
+        <div className="homeText">
+          <h2 className="hello">Hello,</h2>
+          <h2 className="myNameIs">
+            My name is <span className="halden">Halden Kavanagh</span>{" "}
+          </h2>
+          <h3 className="webdev">Full stack web dev</h3>
+        </div>
+        <img className="pfp" src={pfp} alt="profile Picture" />
       </div>
-      <img className="pfp" src={pfp} alt="profile Picture" />
+      <div className="about-me">
+        <h1 className="about-section-title">
+          ABOUT ME <IoIosArrowDown />
+        </h1>
+        <p className="about-p">
+          Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
+          <br />
+          <br />
+          My coding journey started at the University of Denver coding bootcamp,
+          igniting a passion for web development. I found that I really enjoy
+          the problem solving aspect of programming. Seeing my work improve
+          alongside my skillset is extremely gratifying.
+          <br />
+          <br />
+          Outside of coding, you'll find me exploring Boulder's outdoors through
+          hikes, enjoying video games, cooking, and building intricate
+          fishtanks. My diverse interests fuel my creativity both in code and in
+          life. Let's create something exceptional together!
+        </p>
+      </div>
     </div>
   );
 }
