@@ -1,16 +1,14 @@
-import "../../styles/Home.css";
 import "../../styles/Main.css";
 
 import DUcert from "../../images/du-cert.png";
 
-export default function Cert() {
+export default function Certificate() {
   const handleBack = () => {
-
     window.location.href = "/about";
   };
 
   return (
-    <div className="cert">
+    <div className="homePage">
       <button className="submit-btn" onClick={handleBack}>
         Back
       </button>

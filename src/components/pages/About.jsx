@@ -23,7 +23,7 @@ import DUbadge from "../../images/du-badge.png";
 export default function About() {
   const handleCertificateClick = () => {
     // Handle certificate click logic here
-    window.location.href = "/cert";
+    window.location.href = "/certificate";
   };
 
   const handleBadgeClick = () => {

@@ -7,7 +7,7 @@ import About from "./components/pages/About";
 import Contact from "./components/pages/Contact";
 import Projects from "./components/pages/Projects";
 import Resume from "./components/pages/Resume";
-import Cert from "./components/pages/Cert";
+import Certificate from "./components/pages/Certificate";
 
 const router = createBrowserRouter([
   {
@@ -36,12 +36,12 @@ const router = createBrowserRouter([
         element: <Projects />,
       },
       {
-        path: "/resume",
-        element: <Resume />,
+        path: "/certificate",
+        element: <Certificate />,
       },
       {
-        path: "/cert",
-        element: <Cert />,
+        path: "/resume",
+        element: <Resume />,
       },
     ],
   },

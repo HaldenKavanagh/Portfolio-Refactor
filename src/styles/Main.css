@@ -1,10 +1,4 @@
-/* :root {
-  --lightest: #f2e9e4;
-  --light: #c9ada7;
-  --medium: #9a8c98;
-  --dark: #4a4e69;
-  --darkest: #22223b;
-} */
+/* general styling */
 
 :root {
   --lightest: #bfbfb8;
@@ -14,21 +8,42 @@
   --darkest: #232625;
 }
 
-/* :root {
-  --lightest: #d3d3d3;
-  --light: #e5383b;
-  --medium: #b1a7a6;
-  --dark: #660708;
-  --darkest: #161a1d;
-}  */
-
 * {
   font-family: "Rajdhani", sans-serif;
   margin: 0;
   padding: 0;
 }
 
+/* certificate image */
+
 .cert-image {
   max-width: 75vw;
   padding-bottom: 30px;
+}
+
+/* resume styling */
+
+.resume {
+  background-color: var(--darkest);
+}
+
+.resume-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+
+.resume-a {
+  color: var(--lightest);
+  text-decoration: none;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.resume-prev {
+  height: 75vh;
+  width: 50vw;
 }

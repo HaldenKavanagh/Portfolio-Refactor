@@ -19,7 +19,7 @@
   color: var(--light);
 }
 
-.nav-link.active {
+.nav-link active {
   background: var(--dark);
   color: var(--lightest);
 }
