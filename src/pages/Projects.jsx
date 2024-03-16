@@ -1,11 +1,11 @@
-import "../../styles/Projects.css";
+import "../styles/Projects.css";
 
-import candleImg from "../../images/candles.png";
-import textEditerImg from "../../images/text-editer.png";
-import menYouImg from "../../images/menYou.png";
-import weatherImg from "../../images/weather.png";
-import tankBlog from "../../images/tank-blog.png";
-import starrray from "../../images/starrray.png";
+import candleImg from "../images/candles.png";
+import textEditerImg from "../images/text-editer.png";
+import menYouImg from "../images/menYou.png";
+import weatherImg from "../images/weather.png";
+import tankBlog from "../images/tank-blog.png";
+import starrray from "../images/starrray.png";
 
 export default function Projects() {
   return (

@@ -1,6 +1,6 @@
-import "../../styles/Main.css";
+import "../styles/Main.css";
 
-import DUcert from "../../images/du-cert.png";
+import DUcert from "../images/du-cert.png";
 
 export default function Certificate() {
   const handleBack = () => {

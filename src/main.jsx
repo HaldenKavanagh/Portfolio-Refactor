@@ -2,12 +2,12 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
-import Home from "./components/pages/Home";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Projects from "./components/pages/Projects";
-import Resume from "./components/pages/Resume";
-import Certificate from "./components/pages/Certificate";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
+import Certificate from "./pages/Certificate";
 
 const router = createBrowserRouter([
   {

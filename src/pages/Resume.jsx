@@ -1,4 +1,4 @@
-import "../../styles/Main.css";
+import "../styles/Main.css";
 
 export default function Resume() {
   const googleDocURL =

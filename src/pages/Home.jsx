@@ -1,10 +1,10 @@
-import "../../styles/Home.css";
-import "../../styles/Main.css";
+import "../styles/Home.css";
+import "../styles/Main.css";
 
 import React, { useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-import pfp from "../../images/pfp.png";
+import pfp from "../images/pfp.png";
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import "../../styles/Contact.css";
+import "../styles/Contact.css";
 import React, { useState, useRef } from "react";
 
 import Alert from "react-bootstrap/Alert";
