@@ -9,8 +9,6 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { GrCertificate } from "react-icons/gr";
-
 function NavTabs() {
   const location = useLocation();
 
@@ -72,16 +70,6 @@ function NavTabs() {
       >
         <AiOutlineRocket />
         Contact
-      </Link>
-      <Link
-        to="/certificate"
-        className={
-          getPageName(location.pathname) === "Certificate"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
-        <GrCertificate />
       </Link>
     </div>
   );

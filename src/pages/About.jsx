@@ -18,6 +18,8 @@ import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
 import { FaAws, FaWindows, FaSlack, FaGithub, FaDiscord } from "react-icons/fa";
 import { TbBrandVscode } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
+import { GrCertificate } from "react-icons/gr";
+import { LuBadgeCheck } from "react-icons/lu";
 
 import DUbadge from "../images/du-badge.png";
 
@@ -82,10 +84,10 @@ export default function About() {
             <br />
             <br />
             <button onClick={handleCertificateClick} className="submit-btn">
-              View my certificate
+              View my certificate <GrCertificate />
             </button>
             <button onClick={handleBadgeClick} className="submit-btn">
-              View Credily Badge
+              View Credily Badge <LuBadgeCheck />
             </button>
           </p>
         </div>
