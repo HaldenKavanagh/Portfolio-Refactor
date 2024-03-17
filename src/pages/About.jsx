@@ -1,4 +1,5 @@
 import "../styles/About.css";
+import { useNavigate } from "react-router-dom";
 
 import {
   DiReact,
@@ -21,13 +22,14 @@ import { IoIosArrowDown } from "react-icons/io";
 import DUbadge from "../images/du-badge.png";
 
 export default function About() {
+  const navigate = useNavigate();
+
   const handleCertificateClick = () => {
-    // Handle certificate click logic here
-    window.location.href = "/certificate";
+    navigate("/certificate");
   };
 
   const handleBadgeClick = () => {
-    // Handle badge click logic here
+    // Open the Credily badge link in a new tab
     window.open(
       "https://www.credly.com/badges/3d2f16be-a807-4992-be69-bae0bd6aa68c/public_url",
       "_blank"
