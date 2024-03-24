@@ -28,7 +28,8 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        <AiOutlineHome /> Home
+        <AiOutlineHome />
+        <span className="nav-text">Home</span>
       </Link>
       <Link
         to="/about"
@@ -38,7 +39,8 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        <AiOutlineUser /> About
+        <AiOutlineUser />
+        <span className="nav-text">About</span>
       </Link>
       <Link
         to="/projects"
@@ -48,7 +50,8 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        <AiOutlineFundProjectionScreen /> Projects
+        <AiOutlineFundProjectionScreen />
+        <span className="nav-text">Projects</span>
       </Link>
       <Link
         to="/resume"
@@ -58,7 +61,8 @@ function NavTabs() {
             : "nav-link"
         }
       >
-        <AiOutlineAudit /> Resume
+        <AiOutlineAudit />
+        <span className="nav-text">Resume</span>
       </Link>
       <Link
         to="/contact"
@@ -69,7 +73,7 @@ function NavTabs() {
         }
       >
         <AiOutlineRocket />
-        Contact
+        <span className="nav-text">Contact</span>
       </Link>
     </div>
   );

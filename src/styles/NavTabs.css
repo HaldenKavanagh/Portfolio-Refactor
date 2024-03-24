@@ -15,11 +15,21 @@
   transition: background-color 0.3s ease;
 }
 
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    font-size: 0;
+  }
+
+  .nav-link svg {
+    font-size: 4vh;
+  }
+}
+
 .nav-link:hover {
   color: var(--light);
 }
 
-.nav-link active {
+.nav-link.active {
   background: var(--dark);
   color: var(--lightest);
 }
