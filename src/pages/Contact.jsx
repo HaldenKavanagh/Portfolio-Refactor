@@ -1,8 +1,6 @@
 import "../styles/Contact.css";
 import React, { useState, useRef } from "react";
 
-import Alert from "react-bootstrap/Alert";
-import Button from "react-bootstrap/Button";
 import emailjs from "emailjs-com";
 
 export default function Contact() {
@@ -108,18 +106,16 @@ export default function Contact() {
           Submit
         </button>
       </form>
-      {/* <Alert className="my-custom-alert" variant="success">
-        This is a success alert — check it out!
-      </Alert> */}
+      
       {show && (
-        <Alert
+        <div
           className="my-custom-alert"
           variant="success"
           onClose={() => setShow(false)}
           dismissible
         >
           Thank You for your response!
-        </Alert>
+        </div>
       )}
     </div>
   );

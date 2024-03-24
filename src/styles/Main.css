@@ -25,6 +25,7 @@
 
 .resume {
   background-color: var(--darkest);
+  min-height: 86vh;
 }
 
 .resume-container {
@@ -46,4 +47,21 @@
 .resume-prev {
   height: 75vh;
   width: 50vw;
+}
+
+@media only screen and (max-width: 768px) {
+  .resume-prev {
+    height: 80vh;
+    width: 100vw;
+  }
+
+  .resume-container {
+    max-width: 90vw; /* Adjust maximum width for smaller screens */
+  }
+
+  .resume-a {
+    font-size: 20px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 }

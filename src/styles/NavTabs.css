@@ -25,11 +25,11 @@
   }
 }
 
-.nav-link:hover {
-  color: var(--light);
-}
-
 .nav-link.active {
   background: var(--dark);
   color: var(--lightest);
+}
+
+.nav-link:hover {
+  color: var(--light);
 }

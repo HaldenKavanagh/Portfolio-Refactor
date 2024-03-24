@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import "../styles/NavTabs.css";
 import {
   AiOutlineRocket,
@@ -20,61 +20,26 @@ function NavTabs() {
 
   return (
     <div className="navbar">
-      <Link
-        to="/home"
-        className={
-          getPageName(location.pathname) === "Home"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
+      <NavLink to="/home" className="nav-link">
         <AiOutlineHome />
         <span className="nav-text">Home</span>
-      </Link>
-      <Link
-        to="/about"
-        className={
-          getPageName(location.pathname) === "About"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
+      </NavLink>
+      <NavLink to="/about" className="nav-link">
         <AiOutlineUser />
         <span className="nav-text">About</span>
-      </Link>
-      <Link
-        to="/projects"
-        className={
-          getPageName(location.pathname) === "Projects"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
+      </NavLink>
+      <NavLink to="/projects" className="nav-link">
         <AiOutlineFundProjectionScreen />
         <span className="nav-text">Projects</span>
-      </Link>
-      <Link
-        to="/resume"
-        className={
-          getPageName(location.pathname) === "Resume"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
+      </NavLink>
+      <NavLink to="/resume" className="nav-link">
         <AiOutlineAudit />
         <span className="nav-text">Resume</span>
-      </Link>
-      <Link
-        to="/contact"
-        className={
-          getPageName(location.pathname) === "Contact"
-            ? "nav-link active"
-            : "nav-link"
-        }
-      >
+      </NavLink>
+      <NavLink to="/contact" className="nav-link">
         <AiOutlineRocket />
         <span className="nav-text">Contact</span>
-      </Link>
+      </NavLink>
     </div>
   );
 }

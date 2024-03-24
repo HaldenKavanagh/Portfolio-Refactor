@@ -59,3 +59,35 @@
 .badge-section {
   display: flex;
 }
+
+@media only screen and (max-width: 768px) {
+  .skills-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .skills-section-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .badge-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-bottom: 20px;
+  }
+
+  .about-p {
+    margin-left: 0;
+    max-width: 95vw;
+    padding: 20px;
+  }
+
+  .submit-btn {
+    margin-top: 20px;
+  }
+}

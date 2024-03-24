@@ -57,7 +57,7 @@ export default function About() {
         <FaAws className="skill" title="Amazon Web Services" />
       </div>
       <h1 className="skills-section-title">TOOLS I USE :</h1>
-      <div className="tools-container">
+      <div className="skills-container">
         <FaWindows className="skill" title="Windows OS" />
         <DiGit className="skill" title="Git" />
         <TbBrandVscode className="skill" title="VsCode" />
