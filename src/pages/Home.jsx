@@ -1,6 +1,7 @@
 import "../styles/Home.css";
 import "../styles/Main.css";
 import "animate.css";
+import { useNavigate } from "react-router-dom";
 
 import React, { useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
@@ -10,6 +11,11 @@ import { AiOutlineAudit } from "react-icons/ai";
 import pfp from "../images/pfp.png";
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  const handleResumeClick = () => {
+    navigate("/resume");
+  };
   return (
     <div className="homePage">
       <div className="intro">
@@ -40,7 +46,7 @@ export default function Home() {
           hikes, enjoying video games, cooking, and building intricate
           fishtanks. My diverse interests fuel my creativity both in code and in
           life. Let's create something exceptional together!
-          <button className="submit-btn">
+          <button onClick={handleResumeClick} className="submit-btn">
             View Resume
             <AiOutlineAudit />
           </button>

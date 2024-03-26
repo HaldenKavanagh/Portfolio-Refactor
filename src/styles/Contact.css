@@ -30,6 +30,13 @@
   background-color: var(--light);
   margin-bottom: 10px;
   width: 30vw;
+  height: 25px;
+  border-radius: 10px;
+}
+.custom-input-lg {
+  background-color: var(--light);
+  margin-bottom: 10px;
+  width: 30vw;
   border-radius: 10px;
 }
 

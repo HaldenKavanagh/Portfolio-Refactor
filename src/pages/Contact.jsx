@@ -97,7 +97,7 @@ export default function Contact() {
             name="message"
             value={formData.message}
             onChange={handleInputChange}
-            className="form-control custom-input"
+            className="form-control custom-input-lg"
             rows="10"
             required
           />
@@ -106,10 +106,10 @@ export default function Contact() {
           Submit
         </button>
       </form>
-      
+
       {show && (
         <div
-          className="my-custom-alert"
+          className="my-custom-alert animate__animated animate__backInRight"
           variant="success"
           onClose={() => setShow(false)}
           dismissible
