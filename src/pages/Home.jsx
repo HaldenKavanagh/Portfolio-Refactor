@@ -1,8 +1,11 @@
 import "../styles/Home.css";
 import "../styles/Main.css";
+import "animate.css";
 
 import React, { useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
+
+import { AiOutlineAudit } from "react-icons/ai";
 
 import pfp from "../images/pfp.png";
 
@@ -17,13 +20,13 @@ export default function Home() {
           </h2>
           <h3 className="webdev">Full stack web dev</h3>
         </div>
-        <img className="pfp" src={pfp} alt="profile Picture" />
+        <img className="pfp " src={pfp} alt="profile Picture" />
       </div>
       <div className="about-me">
-        <h1 className="about-section-title">
+        <h1 className="about-section-title  animate__animated animate__fadeIn">
           ABOUT ME <IoIosArrowDown />
         </h1>
-        <p className="about-p">
+        <p className="about-p animate__animated animate__fadeInUp">
           Hi, I'm Halden, a Full Stack Web Developer based in Boulder, Colorado.
           <br />
           <br />
@@ -37,6 +40,10 @@ export default function Home() {
           hikes, enjoying video games, cooking, and building intricate
           fishtanks. My diverse interests fuel my creativity both in code and in
           life. Let's create something exceptional together!
+          <button className="submit-btn">
+            View Resume
+            <AiOutlineAudit />
+          </button>
         </p>
       </div>
     </div>

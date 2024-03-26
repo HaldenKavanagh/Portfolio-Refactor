@@ -10,7 +10,7 @@ import starrray from "../images/starrray.png";
 export default function Projects() {
   return (
     <div className="projects">
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={starrray}></img>
           <h1 className="project-title">Star Ray design V2</h1>
@@ -36,7 +36,7 @@ export default function Projects() {
           </a>
         </div>
       </div>
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={tankBlog}></img>
           <h1 className="project-title"> The Tank Blog</h1>
@@ -62,7 +62,7 @@ export default function Projects() {
           </a>
         </div>
       </div>
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={menYouImg}></img>
           <h1 className="project-title"> menYou</h1>
@@ -88,7 +88,7 @@ export default function Projects() {
           </a>
         </div>
       </div>
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={candleImg}></img>
           <h1 className="project-title"> Star Ray design V1</h1>
@@ -114,7 +114,7 @@ export default function Projects() {
           </a>
         </div>
       </div>
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={textEditerImg}></img>
           <h1 className="project-title"> PWA text editor</h1>
@@ -140,7 +140,7 @@ export default function Projects() {
           </a>
         </div>
       </div>
-      <div className="container">
+      <div className="container animate__animated animate__zoomIn">
         <div className="wrapper">
           <img className="banner-image" src={weatherImg}></img>
           <h1 className="project-title"> Weather dashboard</h1>

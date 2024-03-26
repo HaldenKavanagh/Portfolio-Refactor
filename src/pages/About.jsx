@@ -1,6 +1,8 @@
 import "../styles/About.css";
 import { useNavigate } from "react-router-dom";
 
+import "animate.css";
+
 import {
   DiReact,
   DiBootstrap,
@@ -39,36 +41,100 @@ export default function About() {
   };
   return (
     <div className="about">
-      <h1 className="skills-section-title">SKILLSET :</h1>
+      <h1 className="skills-section-title animate__animated animate__fadeInLeft">
+        SKILLSET :
+      </h1>
       <div className="skills-container">
-        <DiNodejsSmall className="skill" title="Node.js" />
-        <DiJqueryLogo className="skill" title="Jquery" />
-        <DiMysql className="skill" title="Mysql" />
-        <DiMongodb className="skill" title="Mongodb" />
-        <DiJsBadge className="skill" title="JavaScript ES6+" />
-        <DiHtml5 className="skill" title="HTML 5" />
-        <DiHeroku className="skill" title="Heroku" />
-        <DiBootstrap className="skill" title="Bootstrap" />
-        <DiReact className="skill" title="React.js" />
-        <DiCss3 className="skill" title="CSS" />
-        <SiExpress className="skill" title="express.js" />
-        <SiHandlebarsdotjs className="skill" title="Handlebars.js" />
-        <SiWebpack className="skill" title="Webpack" />
-        <FaAws className="skill" title="Amazon Web Services" />
+        <DiNodejsSmall
+          className="skill animate__animated animate__backInLeft"
+          title="Node.js"
+        />
+        <DiJqueryLogo
+          className="skill animate__animated animate__backInLeft"
+          title="Jquery"
+        />
+        <DiMysql
+          className="skill animate__animated animate__backInLeft"
+          title="Mysql"
+        />
+        <DiMongodb
+          className="skill animate__animated animate__backInLeft"
+          title="Mongodb"
+        />
+        <DiJsBadge
+          className="skill animate__animated animate__backInLeft"
+          title="JavaScript ES6+"
+        />
+        <DiHtml5
+          className="skill animate__animated animate__backInLeft"
+          title="HTML 5"
+        />
+        <DiHeroku
+          className="skill animate__animated animate__backInLeft"
+          title="Heroku"
+        />
+        <DiBootstrap
+          className="skill animate__animated animate__backInLeft"
+          title="Bootstrap"
+        />
+        <DiReact
+          className="skill animate__animated animate__backInLeft"
+          title="React.js"
+        />
+        <DiCss3
+          className="skill animate__animated animate__backInLeft"
+          title="CSS"
+        />
+        <SiExpress
+          className="skill animate__animated animate__backInLeft"
+          title="express.js"
+        />
+        <SiHandlebarsdotjs
+          className="skill animate__animated animate__backInLeft"
+          title="Handlebars.js"
+        />
+        <SiWebpack
+          className="skill animate__animated animate__backInLeft"
+          title="Webpack"
+        />
+        <FaAws
+          className="skill animate__animated animate__backInLeft"
+          title="Amazon Web Services"
+        />
       </div>
-      <h1 className="skills-section-title">TOOLS I USE :</h1>
+      <h1 className="skills-section-title animate__animated animate__fadeInLeft">
+        TOOLS I USE :
+      </h1>
       <div className="skills-container">
-        <FaWindows className="skill" title="Windows OS" />
-        <DiGit className="skill" title="Git" />
-        <TbBrandVscode className="skill" title="VsCode" />
-        <FaSlack className="skill" title="Slack" />
-        <FaGithub className="skill" title="Github" />
-        <FaDiscord className="skill" title="Discord" />
+        <FaWindows
+          className="skill animate__animated animate__backInRight"
+          title="Windows OS"
+        />
+        <DiGit
+          className="skill animate__animated animate__backInRight"
+          title="Git"
+        />
+        <TbBrandVscode
+          className="skill animate__animated animate__backInRight"
+          title="VsCode"
+        />
+        <FaSlack
+          className="skill animate__animated animate__backInRight"
+          title="Slack"
+        />
+        <FaGithub
+          className="skill animate__animated animate__backInRight"
+          title="Github"
+        />
+        <FaDiscord
+          className="skill animate__animated animate__backInRight"
+          title="Discord"
+        />
       </div>
-      <h1 className="skills-section-title">
+      <h1 className="skills-section-title animate__animated animate__fadeInLeft">
         EDUCATION <IoIosArrowDown />{" "}
       </h1>
-      <div className="education">
+      <div className="education animate__animated animate__fadeInUp">
         <div className="badge-section">
           <img className="about-image" src={DUbadge}></img>
           <p className="about-p">
