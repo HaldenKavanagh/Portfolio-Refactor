@@ -9,7 +9,7 @@
   border-radius: 12px;
   background: var(--dark);
   border: 3px solid var(--light);
-  padding: 38px;
+  padding: 35px;
   margin: 30px;
   display: flex;
   flex-direction: column;
@@ -28,12 +28,15 @@
 .wrapper {
   background: var(--dark);
   border-radius: 12px;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .banner-image {
   background-position: center;
-  max-height: 20vh;
+  height: 200px;
   border-radius: 12px;
 }
 
@@ -45,6 +48,7 @@
   padding: 5px;
   margin: 5px;
   margin-top: 15px;
+  width: 420px;
 }
 
 .project-description {
@@ -60,7 +64,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 20vw;
+  width: 420px;
 }
 
 .button-wrapper {
@@ -91,8 +95,8 @@
 
 .fill {
   background: var(--medium);
-  color: var(--darkest);
-  font-weight: bold;
+  color: var(--light);
+
   text-decoration: none;
 }
 

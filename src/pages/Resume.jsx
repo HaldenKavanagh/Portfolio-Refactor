@@ -8,7 +8,7 @@ export default function Resume() {
   return (
     <div className="resume">
       <div className="resume-container">
-        <iframe className="resume-prev" src={googleDocURL}></iframe>
+        <iframe className="resume-prev animate__animated animate__fadeIn" src={googleDocURL}></iframe>
         <a
           className="resume-a"
           href={downloadURL}

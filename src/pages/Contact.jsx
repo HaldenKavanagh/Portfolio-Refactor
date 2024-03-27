@@ -64,7 +64,11 @@ export default function Contact() {
   return (
     <div className="contact">
       <h1 className="contact-title">Contact Me</h1>
-      <form ref={formRef} onSubmit={handleSubmit} className="contactForm">
+      <form
+        ref={formRef}
+        onSubmit={handleSubmit}
+        className="contactForm animate__animated animate__fadeIn"
+      >
         <label htmlFor="name">Name:</label>
         <div>
           <input
