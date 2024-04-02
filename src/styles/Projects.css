@@ -16,7 +16,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  max-width: 70vw;
+  width: calc(33.33% - 60px);
+
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -103,6 +104,9 @@
 @media only screen and (max-width: 768px) {
   .banner-image {
     max-height: 15vh;
+  }
+  .container {
+    width: calc(50% - 40px);
   }
 
   .project-title {
