@@ -19,7 +19,7 @@
   justify-content: center;
   text-align: center;
   width: 25vw;
-
+  max-width: 420px;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -71,7 +71,11 @@
 }
 
 .button-wrapper {
-  margin-top: 18px;
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  
 }
 
 .btn {
@@ -82,14 +86,15 @@
   letter-spacing: 2px;
   cursor: pointer;
   background: transparent;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .btn:hover {
   background-color: var(--darkest);
   color: var(--light);
-  border: 2px solid var(--light);
+  border-color: var(--light);
 }
 
 .btn + .btn {
@@ -99,7 +104,6 @@
 .fill {
   background: var(--medium);
   color: var(--light);
-
   text-decoration: none;
 }
 

@@ -16,7 +16,7 @@ import {
   DiNodejsSmall,
   DiJqueryLogo,
 } from "react-icons/di";
-import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
+import { SiExpress, SiHandlebarsdotjs, SiWebpack, SiApollographql } from "react-icons/si";
 import { FaAws, FaWindows, FaSlack, FaGithub, FaDiscord } from "react-icons/fa";
 import { TbBrandVscode, TbBrandReactNative } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
@@ -41,6 +41,7 @@ const techData = [
   { name: "Handlebars.js", icon: SiHandlebarsdotjs },
   { name: "Webpack", icon: SiWebpack },
   { name: "GraphQl", icon: GrGraphQl },
+  { name: "Apollo GraphQl", icon: SiApollographql },
   { name: "Amazon Web Services", icon: FaAws },
 ];
 

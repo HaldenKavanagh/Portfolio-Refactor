@@ -11,29 +11,29 @@ export default function Projects() {
   return (
     <div className="projects">
       <div className="container animate__animated animate__fadeIn">
+        <img className="banner-image" src={starrray}></img>
         <div className="wrapper">
-          <img className="banner-image" src={starrray}></img>
           <h1 className="project-title">Star Ray design V2</h1>
           <p className="project-description">
             Full stack E-commerce site designed for a local botique shop. Uses
             full MERN tech stack.
           </p>
-        </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/laurabacon/Star-Ray"
-            target="_blank"
-            className="btn fill"
-          >
-            View Github Repo
-          </a>
-          <a
-            href="https://lit-eyrie-12834-5b6e0706190e.herokuapp.com/"
-            target="_blank"
-            className="btn fill"
-          >
-            Visit site
-          </a>
+          <div className="button-wrapper">
+            <a
+              href="https://github.com/laurabacon/Star-Ray"
+              target="_blank"
+              className="btn fill"
+            >
+              View Github Repo
+            </a>
+            <a
+              href="https://lit-eyrie-12834-5b6e0706190e.herokuapp.com/"
+              target="_blank"
+              className="btn fill"
+            >
+              Visit site
+            </a>
+          </div>
         </div>
       </div>
       <div className="container animate__animated animate__fadeIn">
@@ -41,7 +41,7 @@ export default function Projects() {
           <img className="banner-image" src={tankBlog}></img>
           <h1 className="project-title"> The Tank Blog</h1>
           <p className="project-description">
-            full stack MERN style blog site, allows users to login, create
+            Full stack MERN style blog site, allows users to login, create
             posts, comment, and more.
           </p>
         </div>
@@ -65,27 +65,43 @@ export default function Projects() {
       <div className="container animate__animated animate__fadeIn">
         <div className="wrapper">
           <img className="banner-image" src={menYouImg}></img>
-          <h1 className="project-title"> menYou</h1>
+          <h1 className="project-title">menYou</h1>
           <p className="project-description">
-            Date night planner, utilizes multiple third party API's to plan your
-            next date night!
+            Date night planner, utilizes multiple third-party APIs to plan your
+            next date night! Refactored in React Native.
           </p>
-        </div>
-        <div className="button-wrapper">
-          <a
-            href="https://github.com/scook9/menYou"
-            target="_blank"
-            className="btn fill"
-          >
-            View Github Repo
-          </a>
-          <a
-            href="https://scook9.github.io/menYou/"
-            target="_blank"
-            className="btn fill"
-          >
-            Visit site
-          </a>
+          <div className="button-wrapper">
+            <a
+              href="https://github.com/scook9/menYou"
+              target="_blank"
+              className="btn fill"
+            >
+              View Github Repo
+            </a>
+            <a
+              href="https://scook9.github.io/menYou/"
+              target="_blank"
+              className="btn fill"
+            >
+              Visit site
+            </a>
+          </div>
+          <div className="button-wrapper">
+            <a
+              href="https://github.com/HaldenKavanagh/MenYou-Native-Refactor"
+              target="_blank"
+              className="btn fill"
+            >
+              Native Refactor Repo
+            </a>
+            <a
+              href="https://scook9.github.io/menYou/"
+              target="_blank"
+              className="btn fill"
+            >
+              View Native Demo
+            </a>
+          </div>
         </div>
       </div>
       <div className="container animate__animated animate__fadeIn">
