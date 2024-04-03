@@ -18,7 +18,7 @@ import {
 } from "react-icons/di";
 import { SiExpress, SiHandlebarsdotjs, SiWebpack } from "react-icons/si";
 import { FaAws, FaWindows, FaSlack, FaGithub, FaDiscord } from "react-icons/fa";
-import { TbBrandVscode } from "react-icons/tb";
+import { TbBrandVscode, TbBrandReactNative } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
 import { GrCertificate, GrGraphQl } from "react-icons/gr";
 import { LuBadgeCheck } from "react-icons/lu";
@@ -35,6 +35,7 @@ const techData = [
   { name: "Heroku", icon: DiHeroku },
   { name: "Bootstrap", icon: DiBootstrap },
   { name: "React", icon: DiReact },
+  { name: "React Native", icon: TbBrandReactNative },
   { name: "Css3", icon: DiCss3 },
   { name: "express.js", icon: SiExpress },
   { name: "Handlebars.js", icon: SiHandlebarsdotjs },
