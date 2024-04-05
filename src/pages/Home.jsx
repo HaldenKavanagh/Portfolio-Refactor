@@ -43,9 +43,8 @@ export default function Home() {
           <br />
           <br />
           Outside of coding, you'll find me exploring Boulder's outdoors through
-          hikes, enjoying video games, cooking, and building intricate
-          fishtanks. My diverse interests fuel my creativity both in code and in
-          life. Let's create something exceptional together!
+          hikes, enjoying video games, and cooking. My diverse interests fuel my
+          creativity both in code and in life.
           <button onClick={handleResumeClick} className="submit-btn">
             View Resume
             <AiOutlineAudit />
