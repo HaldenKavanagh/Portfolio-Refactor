@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 25vw;
+  width: 25vw; /* Fallback for larger screens */
   max-width: 420px;
   transition: background-color 0.3s ease;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -39,7 +39,9 @@
 
 .banner-image {
   background-position: center;
-  width: 420px;
+  width: 100%; /* Adjusted to fit smaller screens */
+  max-width: 100%; /* Ensures image does not exceed container width */
+  height: auto; /* Ensures aspect ratio is maintained */
   border-radius: 12px;
 }
 
@@ -51,7 +53,7 @@
   padding: 5px;
   margin: 5px;
   margin-top: 15px;
-  width: 420px;
+  width: 100%; /* Adjusted to fit smaller screens */
 }
 
 .project-description {
@@ -64,18 +66,14 @@
   padding: 5px;
   margin: 5px;
   margin-top: 10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 420px;
+  width: 100%; /* Adjusted to fit smaller screens */
 }
 
 .button-wrapper {
   margin-top: 12px;
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   justify-content: center;
-  
 }
 
 .btn {
@@ -108,11 +106,9 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .banner-image {
-    max-height: 15vh;
-  }
   .container {
-    width: calc(50% - 40px);
+    width: calc(50% - 30px); /* Adjusted to fit two containers per row */
+    max-width: none; /* Remove max-width for smaller screens */
   }
 
   .project-title {
@@ -122,12 +118,7 @@
 
   .project-description {
     font-size: 0.7rem;
-    max-width: 80vw;
+    max-width: 90vw; /* Adjusted for smaller screens */
     margin-top: 5px;
-  }
-
-  .button-wrapper {
-    margin-top: 12px;
-    display: flex;
   }
 }
