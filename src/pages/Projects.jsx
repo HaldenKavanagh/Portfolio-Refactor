@@ -1,5 +1,7 @@
 import "../styles/Projects.css";
 
+import { useNavigate } from "react-router-dom";
+
 import candleImg from "../images/candles.png";
 import textEditerImg from "../images/text-editer.png";
 import menYouImg from "../images/menYou.png";
@@ -8,6 +10,10 @@ import tankBlog from "../images/tank-blog.png";
 import starrray from "../images/starrray.png";
 
 export default function Projects() {
+  const navigate = useNavigate();
+  const handleDemoClick = () => {
+    navigate("/native-demo");
+  };
   return (
     <div className="projects">
       <div className="container animate__animated animate__fadeIn">
@@ -94,11 +100,7 @@ export default function Projects() {
             >
               Native Refactor Repo
             </a>
-            <a
-              href="https://scook9.github.io/menYou/"
-              target="_blank"
-              className="btn fill"
-            >
+            <a onClick={handleDemoClick} target="_blank" className="btn fill">
               View Native Demo
             </a>
           </div>

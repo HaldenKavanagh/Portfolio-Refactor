@@ -8,6 +8,7 @@ import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Certificate from "./pages/Certificate";
+import NativeDemo from "./pages/NativeDemo";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,10 @@ const router = createBrowserRouter([
       {
         path: "/certificate",
         element: <Certificate />,
+      },
+      {
+        path: "/native-demo",
+        element: <NativeDemo />,
       },
       {
         path: "/resume",
