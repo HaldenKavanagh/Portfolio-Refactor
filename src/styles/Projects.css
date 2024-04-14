@@ -105,10 +105,41 @@
   text-decoration: none;
 }
 
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  padding: 20px;
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 35px;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .container {
-    width: calc(50% - 30px); /* Adjusted to fit two containers per row */
-    max-width: none; /* Remove max-width for smaller screens */
+    width: calc(50% - 30px);
+    max-width: none;
   }
 
   .project-title {

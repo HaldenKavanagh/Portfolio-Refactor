@@ -1,6 +1,8 @@
 import "../styles/Projects.css";
 
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
+
+import { FaRegWindowClose } from "react-icons/fa";
 
 import candleImg from "../images/candles.png";
 import textEditerImg from "../images/text-editer.png";
@@ -8,14 +10,36 @@ import menYouImg from "../images/menYou.png";
 import weatherImg from "../images/weather.png";
 import tankBlog from "../images/tank-blog.png";
 import starrray from "../images/starrray.png";
+import MenYouVideo from "../videos/MenYou.mp4";
 
 export default function Projects() {
-  const navigate = useNavigate();
-  const handleDemoClick = () => {
-    navigate("/native-demo");
+  const [showVideo, setShowVideo] = useState(false);
+
+  const handleViewDemo = () => {
+    setShowVideo(true);
   };
+
+  const handleCloseVideo = () => {
+    setShowVideo(false);
+  };
+
   return (
     <div className="projects">
+      {showVideo && (
+        <div className="video-overlay ">
+          <div className="video-container animate__animated animate__backInUp">
+            <FaRegWindowClose
+              className="close-btn"
+              onClick={handleCloseVideo}
+            />
+
+            <video controls>
+              <source src={MenYouVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      )}
       <div className="container animate__animated animate__fadeIn">
         <img className="banner-image" src={starrray}></img>
         <div className="wrapper">
@@ -100,7 +124,7 @@ export default function Projects() {
             >
               Native Refactor Repo
             </a>
-            <a onClick={handleDemoClick} target="_blank" className="btn fill">
+            <a onClick={handleViewDemo} target="_blank" className="btn fill">
               View Native Demo
             </a>
           </div>
