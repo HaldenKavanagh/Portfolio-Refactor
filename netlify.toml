@@ -1,0 +1,23 @@
+# Netlify build configuration.
+#
+# Tailwind v4 ships its engine (@tailwindcss/oxide) as a platform-specific
+# NATIVE binary via optional dependencies. A committed package-lock generated on
+# macOS trips the npm optional-deps bug (npm/cli#4828) so the Linux binary isn't
+# installed on CI, producing "Cannot find native binding". package-lock.json is
+# therefore not committed; `npm install` here resolves the correct linux-x64
+# binary fresh for this build host.
+
+[build]
+  command = "npm install && npm run build"
+  publish = "dist"
+
+[build.environment]
+  # Pin a Node version Vite 6 + Tailwind v4 fully support.
+  NODE_VERSION = "20"
+
+# SPA fallback: client-side routes (/resume, /certificate) must serve index.html
+# instead of 404ing on direct load / refresh.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
