@@ -1,33 +1,67 @@
-# Professional Portfolio
+# Halden Kavanagh — Portfolio
 
-## Table of Contents
+A single-page personal portfolio for a full-stack web developer, built with **React 19, Vite 6, and Tailwind CSS v4**. Hand-designed "Lifted Forest" dark theme (sage/forest palette, mint accent, Rajdhani + Inter type).
 
-1. [Description](#description)
-2. [Installation](#Installation-Instructions)
-3. [Usage](#Usage-Information)
-4. [link to deployed](#link-to-deployed)
-5. [Questions](#Questions)
+## Tech stack
 
-## Description
+- **React 19** + **react-router-dom v7** (data router)
+- **Vite 6** build tooling
+- **Tailwind CSS v4** via `@tailwindcss/vite` (design tokens in `src/index.css`)
+- **@emailjs/browser** for the contact form
+- **react-icons** for iconography
 
-this is a refactored professional portfolio made using react. It includes dections for About, projects, resume, and contact.
+## Getting started
 
-## Installation Instructions
+```bash
+git clone https://github.com/HaldenKavanagh/<repo>.git
+cd <repo>
+npm install
+npm run dev        # http://localhost:3000
+```
 
-clone the repo to your local device and run "npm i && npm run build && npm run dev" into your terminal to kick off the server on your local host.
+Other scripts:
 
-## Usage Information
+```bash
+npm run build      # production build → dist/
+npm run preview    # serve the production build
+npm run lint       # ESLint (fails on any warning)
+```
 
-Use the buttons in the navbar to navigate the site. To contact me, fill out and submit the contact form on the last page
+## Contact form setup (EmailJS)
 
-## link to deployed
+The contact form reads its credentials from environment variables. Copy the example file and fill in your [EmailJS](https://dashboard.emailjs.com/admin) keys:
 
-https://soft-croissant-b1b9e1.netlify.app/
+```bash
+cp .env.example .env
+# then set:
+# VITE_EMAILJS_SERVICE_ID, VITE_EMAILJS_TEMPLATE_ID, VITE_EMAILJS_PUBLIC_KEY
+```
 
-## Questions
+Until these are set, the form stays in a graceful "not configured" state and prompts visitors to email directly. `.env` is gitignored.
 
-Visit my GitHub profile: [HaldenKavanagh](https://github.com/HaldenKavanagh/)
+## Structure
 
-Email me with further questions at haldenkav@gmail.com
+```
+src/
+  main.jsx                # router (/, /resume, /certificate, error page)
+  App.jsx                 # layout shell: Navbar + Outlet + Footer
+  index.css               # Tailwind import + Lifted Forest @theme tokens + utilities
+  pages/                  # Landing, Resume, Certificate, ErrorPage
+  components/             # Navbar, Footer, ProjectCard, VideoModal
+    sections/             # Hero, About, Skills, Projects, Contact
+  data/                   # projects.js, skills.js, site.js  (edit content here)
+  hooks/useReveal.js      # scroll-reveal IntersectionObserver
+  images/  videos/        # imported assets
+```
 
+To update content, edit the modules in `src/data/` rather than the JSX.
 
+## Deployment
+
+Static build (`dist/`) — deployable to Netlify, Vercel, or any static host.
+
+## Contact
+
+- GitHub: [HaldenKavanagh](https://github.com/HaldenKavanagh/)
+- LinkedIn: [Halden Kavanagh](https://www.linkedin.com/in/halden-kavanagh-79169b2b6/)
+- Email: haldenkav@gmail.com

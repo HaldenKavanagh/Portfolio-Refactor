@@ -1,17 +1,13 @@
-import React from "react";
-
 import { Outlet } from "react-router-dom";
-import NavTabs from "./components/NavTabs";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-function App() {
+export default function App() {
   return (
-    <main>
-      <NavTabs />
+    <div className="min-h-screen bg-base text-mist antialiased selection:bg-mint/30">
+      <Navbar />
       <Outlet />
       <Footer />
-    </main>
+    </div>
   );
 }
-
-export default App;
