@@ -3,9 +3,9 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { site } from "../../data/site";
 
 const stats = [
-  { value: "Full-stack", label: "Front to back" },
-  { value: "Elixir", label: "Current stack" },
-  { value: "Boulder", label: "Colorado" },
+  { value: "2 yrs", label: "Production experience" },
+  { value: "135+", label: "Features & fixes shipped" },
+  { value: "3", label: "Products built on" },
 ];
 
 export default function About() {
@@ -23,19 +23,22 @@ export default function About() {
 
         <div className="md:col-span-2 reveal">
           <p className="text-lg text-mist leading-relaxed">
-            I&apos;m a full-stack developer at Razoyo who likes owning a feature
-            end to end — from the data model to the UI. Right now that&apos;s{" "}
-            <span className="text-chalk">Elixir &amp; Phoenix LiveView</span>,
-            building real-time SaaS on Google Cloud, but I came up through the{" "}
-            <span className="text-chalk">JavaScript</span> world (React, Node,
-            REST/GraphQL) and pick up new stacks quickly.
+            I&apos;m a full-stack developer at Razoyo with two years of
+            production experience in{" "}
+            <span className="text-chalk">Elixir &amp; Phoenix LiveView</span>.
+            I&apos;ve delivered <span className="text-chalk">135+ features and
+            fixes</span> on a live CRM, co-architected a commerce system with
+            custom WordPress/WooCommerce plugins, and built a company marketing
+            site from scratch.
           </p>
           <p className="mt-4 text-sage leading-relaxed">
-            What I care about is solving the problem well, whatever the tools.
-            I got my start at the University of Denver full-stack coding bootcamp
-            (Feb 2024). Outside of code you&apos;ll find me in Boulder&apos;s
-            outdoors hiking, deep in a video game, building PCs, or cooking
-            something ambitious.
+            I work comfortably across the whole stack — real-time UI, backend
+            logic, database design, and design systems. I pick things up fast
+            and lean on AI-assisted workflows to move quickly. I got my start at
+            the University of Denver full-stack coding bootcamp (Feb 2024).
+            Outside of code you&apos;ll find me in Boulder&apos;s outdoors
+            hiking, deep in a video game, building PCs, or cooking something
+            ambitious.
           </p>
 
           <div className="mt-8 grid grid-cols-3 gap-4">

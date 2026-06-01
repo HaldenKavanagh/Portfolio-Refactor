@@ -16,9 +16,10 @@ export default function Hero() {
           Kavanagh
         </h1>
         <p className="mt-6 text-lg text-sage max-w-md leading-relaxed">
-          Full-stack developer who builds production web apps end to end —
-          currently in Elixir &amp; Phoenix LiveView at Razoyo, with a React and
-          Node background. Based in {site.location}.
+          Full Stack Developer with two years shipping production SaaS in Elixir
+          &amp; Phoenix LiveView at Razoyo. I work across the whole stack —
+          real-time UI, backend logic, database design, and design systems.
+          Based in {site.location}.
         </p>
         <div className="mt-8 flex flex-wrap items-center gap-4">
           <a

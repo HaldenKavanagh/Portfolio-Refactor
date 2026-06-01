@@ -16,27 +16,28 @@ import menYouVideo from "../videos/MenYou.mp4";
  */
 export const projects = [
   {
-    title: "Kenzi",
-    featured: true,
-    role: "Razoyo · Software Developer",
-    description:
-      "Multi-channel customer support platform for eCommerce merchants — email, live chat, and social DMs in one inbox. A Phoenix LiveView app built with domain-driven design: multi-tenant workspace scoping, a Broadway + Pub/Sub webhook pipeline, Oban background sync, and rich-text messaging. Shipped to Google Cloud.",
-    tags: [
-      "Elixir",
-      "Phoenix LiveView",
-      "Ecto",
-      "Oban",
-      "Broadway",
-      "Google Cloud",
-    ],
-  },
-  {
     title: "Matrix",
     featured: true,
     role: "Razoyo · Software Developer",
     description:
-      "Hospitality sales CRM for managing opportunities, leads, contacts, and activities, with multi-tenant subscriptions and property-level permissions. Phoenix LiveView with AI-assisted summaries, email ingestion, PDF generation, and reporting.",
-    tags: ["Elixir", "Phoenix LiveView", "Ecto / PostgreSQL", "AI features"],
+      "Production CRM SaaS in Phoenix LiveView. I shipped 135 issues — 66 features, 63 fixes — over 20 months, built the Algolia-powered global search from proof-of-concept to production, and designed an attribution system that needed careful data modeling. Also delivered data import/export, contracts & e-signature, dashboard widgets, and reporting.",
+    tags: ["Elixir", "Phoenix LiveView", "Algolia", "PostgreSQL"],
+  },
+  {
+    title: "Kenzi",
+    featured: true,
+    role: "Razoyo · Software Developer",
+    description:
+      "Commerce chat platform. I co-architected the commerce system and authored its WordPress + WooCommerce PHP plugins, then built the full front-end theme in DaisyUI — owning the styling, UI features, and bug fixes.",
+    tags: ["PHP", "WordPress", "WooCommerce", "DaisyUI"],
+  },
+  {
+    title: "Razoyo Website",
+    featured: true,
+    role: "Razoyo · Software Developer",
+    description:
+      "Company marketing site, built from scratch with Hugo + CloudCannon (460+ commits): a large, content-rich site with a blog and custom features in JavaScript and Go. I built a reusable component library and a CMS workflow so the non-technical marketing team could manage it independently.",
+    tags: ["Hugo", "CloudCannon", "JavaScript", "Go"],
   },
   {
     title: "Star Ray (V2)",

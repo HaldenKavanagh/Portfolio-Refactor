@@ -26,18 +26,55 @@ export default function Experience() {
               </h3>
               <p className="text-sm text-sage font-medium">{job.period}</p>
             </div>
-            <p className="mt-3 text-sage leading-relaxed max-w-3xl">
+            {(job.location || job.note) && (
+              <p className="mt-1 text-sm text-sage">
+                {[job.location, job.note].filter(Boolean).join(" · ")}
+              </p>
+            )}
+            <p className="mt-3 text-mist leading-relaxed max-w-3xl">
               {job.description}
             </p>
-            {job.tags?.length > 0 && (
-              <div className="mt-4 flex flex-wrap gap-2">
-                {job.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className="text-xs font-medium text-mist border border-line rounded-full px-2.5 py-1"
+
+            {job.highlights?.length > 0 && (
+              <div className="mt-6 grid gap-4">
+                {job.highlights.map((item) => (
+                  <div
+                    key={item.title}
+                    className="bg-surface border border-line rounded-2xl p-5"
                   >
-                    {tag}
-                  </span>
+                    <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                      <h4 className="font-display font-semibold text-lg text-chalk">
+                        {item.title}
+                      </h4>
+                      {item.stack && (
+                        <p className="text-xs font-medium text-mint">
+                          {item.stack}
+                        </p>
+                      )}
+                    </div>
+                    <ul className="mt-3 grid gap-2">
+                      {item.bullets.map((bullet) => (
+                        <li
+                          key={bullet}
+                          className="text-sage leading-relaxed pl-4 relative before:absolute before:left-0 before:top-[0.6em] before:w-1.5 before:h-1.5 before:rounded-full before:bg-mint/70"
+                        >
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                    {item.tags?.length > 0 && (
+                      <div className="mt-4 flex flex-wrap gap-2">
+                        {item.tags.map((tag) => (
+                          <span
+                            key={tag}
+                            className="text-xs font-medium text-mist border border-line rounded-full px-2.5 py-1"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
                 ))}
               </div>
             )}

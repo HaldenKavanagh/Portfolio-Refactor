@@ -17,20 +17,36 @@ export default function Resume() {
           </div>
           <a
             href={resume.downloadURL}
-            target="_blank"
-            rel="noopener noreferrer"
+            download
             className="inline-flex items-center gap-2 bg-mint text-base font-semibold px-6 py-3 rounded-xl hover:bg-mint-lite transition"
           >
             <FiDownload size={18} />
-            Download my resume (PDF)
+            Download PDF
           </a>
         </div>
 
-        <iframe
-          src={resume.previewURL}
-          title="Halden Kavanagh resume preview"
-          className="w-full h-[80vh] rounded-xl border border-line bg-surface"
-        />
+        {/* Render the PDF on its native white background via the browser viewer. */}
+        <object
+          data={resume.downloadURL}
+          type="application/pdf"
+          className="w-full h-[85vh] rounded-xl border border-line bg-white"
+          aria-label="Halden Kavanagh resume (PDF)"
+        >
+          {/* Fallback for browsers that won't inline-render PDFs (e.g. most mobile). */}
+          <div className="flex flex-col items-center justify-center gap-4 h-[40vh] bg-white rounded-xl text-center px-6">
+            <p className="text-base font-medium">
+              Your browser can&apos;t display the PDF inline.
+            </p>
+            <a
+              href={resume.downloadURL}
+              download
+              className="inline-flex items-center gap-2 bg-mint text-base font-semibold px-6 py-3 rounded-xl hover:bg-mint-lite transition"
+            >
+              <FiDownload size={18} />
+              Download the resume PDF
+            </a>
+          </div>
+        </object>
 
         <Link
           to="/"
