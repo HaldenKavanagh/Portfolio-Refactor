@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const anchorLinks = [
@@ -7,6 +7,7 @@ const anchorLinks = [
   { label: "About", hash: "#about" },
   { label: "Experience", hash: "#experience" },
   { label: "Projects", hash: "#projects" },
+  { label: "Resume", hash: "#resume" },
   { label: "Contact", hash: "#contact" },
 ];
 
@@ -52,9 +53,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <Link to="/resume" className="ul-anim hover:text-chalk transition">
-            Resume
-          </Link>
         </div>
 
         <a
@@ -88,13 +86,6 @@ export default function Navbar() {
               {link.label}
             </a>
           ))}
-          <Link
-            to="/resume"
-            onClick={close}
-            className="block py-1 hover:text-chalk transition"
-          >
-            Resume
-          </Link>
         </div>
       )}
     </header>

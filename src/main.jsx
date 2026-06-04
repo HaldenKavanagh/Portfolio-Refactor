@@ -5,7 +5,6 @@ import "./index.css";
 
 import App from "./App";
 import Landing from "./pages/Landing";
-import Resume from "./pages/Resume";
 import Certificate from "./pages/Certificate";
 import ErrorPage from "./pages/ErrorPage";
 
@@ -16,7 +15,6 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       { index: true, element: <Landing /> },
-      { path: "resume", element: <Resume /> },
       { path: "certificate", element: <Certificate /> },
     ],
   },
