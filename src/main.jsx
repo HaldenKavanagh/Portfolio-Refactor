@@ -8,6 +8,12 @@ import Landing from "./pages/Landing";
 import Certificate from "./pages/Certificate";
 import ErrorPage from "./pages/ErrorPage";
 
+// Stop the browser from silently restoring the last scroll position (e.g. the
+// Resume section) on refresh/back-forward; Landing's own hash effect owns scrolling.
+if ("scrollRestoration" in window.history) {
+  window.history.scrollRestoration = "manual";
+}
+
 const router = createBrowserRouter([
   {
     path: "/",

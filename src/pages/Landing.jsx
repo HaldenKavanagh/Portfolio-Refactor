@@ -15,7 +15,10 @@ export default function Landing() {
   // When arriving from another route with a hash (e.g. /#about), scroll to it.
   const { hash } = useLocation();
   useEffect(() => {
-    if (!hash) return;
+    if (!hash) {
+      window.scrollTo(0, 0);
+      return;
+    }
     const el = document.querySelector(hash);
     if (!el) return;
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;

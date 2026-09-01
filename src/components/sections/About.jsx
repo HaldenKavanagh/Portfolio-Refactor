@@ -23,10 +23,11 @@ export default function About() {
 
         <div className="md:col-span-2 reveal">
           <p className="text-lg text-mist leading-relaxed">
-            I&apos;m a full-stack developer at Razoyo with two years of
-            production experience in{" "}
-            <span className="text-chalk">Elixir &amp; Phoenix LiveView</span>.
-            I&apos;ve delivered <span className="text-chalk">135+ features and
+            I&apos;m a full-stack developer with two years of production
+            experience in{" "}
+            <span className="text-chalk">Elixir &amp; Phoenix LiveView</span>,
+            most recently at Razoyo. I&apos;ve delivered{" "}
+            <span className="text-chalk">135+ features and
             fixes</span> on a live CRM, co-architected a commerce system with
             custom WordPress/WooCommerce plugins, and built a company marketing
             site from scratch.

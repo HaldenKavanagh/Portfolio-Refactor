@@ -4,7 +4,7 @@ export const experience = [
     role: "Software Developer",
     company: "Razoyo",
     location: "Boulder, CO",
-    period: "May 2023 — May 2026",
+    period: "May 2024 — May 2026",
     note: "Promoted from Web Development Intern",
     description:
       "Full-stack developer across three production products: a CRM, a commerce chat platform, and the company website.",

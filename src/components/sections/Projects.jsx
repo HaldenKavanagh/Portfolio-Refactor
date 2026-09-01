@@ -18,7 +18,7 @@ export default function Projects() {
             Work &amp; projects
           </h2>
           <p className="text-sage mt-3 max-w-xl">
-            Production apps I build at Razoyo, plus earlier full-stack projects.
+            Production apps I built at Razoyo, plus earlier full-stack projects.
           </p>
         </div>
 
